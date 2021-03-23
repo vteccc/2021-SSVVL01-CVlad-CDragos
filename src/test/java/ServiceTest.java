@@ -1,5 +1,3 @@
-package ssvv.example;
-
 import org.junit.jupiter.api.Test;
 import ssvv.example.domain.Nota;
 import ssvv.example.domain.Student;
