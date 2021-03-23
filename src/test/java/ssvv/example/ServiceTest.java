@@ -1,4 +1,4 @@
-package ssvv.example.service;
+package ssvv.example;
 
 import org.junit.jupiter.api.Test;
 
