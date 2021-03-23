@@ -29,7 +29,6 @@ class ServiceTest {
         int result = service.saveStudent(id, "tester", 933);
         assertEquals(1,result);
         service.deleteStudent(id);
-
     }
 
     @Test
