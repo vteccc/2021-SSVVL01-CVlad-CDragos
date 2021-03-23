@@ -48,14 +48,59 @@ class ServiceTest {
     @Test
     public void test_saveStudent_invlaid_grupa_lower() {
         String id = "3";
-        int result = service.saveStudent(id, "", 1);
+        int result = service.saveStudent(id, "tester", 110);
         assertEquals(1,result);
+    }
+
+    @Test
+    public void test_saveStudent_valid_grupa_lower() {
+        String id = "3";
+        int result = service.saveStudent(id, "tester", 111);
+        assertEquals(1,result);
+        service.deleteStudent(id);
     }
     @Test
     public void test_saveStudent_invlaid_grupa_upper() {
         String id = "3";
-        int result = service.saveStudent(id, "", 990);
+        int result = service.saveStudent(id, "tester", 938);
         assertEquals(1,result);
+    }
+
+    @Test
+    public void test_saveStudent_valid_grupa_upper() {
+        String id = "3";
+        int result = service.saveStudent(id, "tester", 937);
+        assertEquals(1,result);
+        service.deleteStudent(id);
+    }
+
+    @Test
+    public void test_saveStudent_invlaid_grupa_lower_without_name() {
+        String id = "3";
+        int result = service.saveStudent(id, "", 110);
+        assertEquals(1,result);
+    }
+
+    @Test
+    public void test_saveStudent_valid_grupa_lower_without_name() {
+        String id = "3";
+        int result = service.saveStudent(id, "", 111);
+        assertEquals(1,result);
+        service.deleteStudent(id);
+    }
+    @Test
+    public void test_saveStudent_invlaid_grupa_upper_without_name() {
+        String id = "3";
+        int result = service.saveStudent(id, "", 938);
+        assertEquals(1,result);
+    }
+
+    @Test
+    public void test_saveStudent_valid_grupa_upper_without_name() {
+        String id = "3";
+        int result = service.saveStudent(id, "", 937);
+        assertEquals(1,result);
+        service.deleteStudent(id);
     }
 
     @Test
