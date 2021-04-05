@@ -202,7 +202,6 @@ class ServiceTestTema {
         assertEquals(result,1);
     }
 
-
     @Test
     void test_saveTema_lower_startline() {
         int startline = 0;
