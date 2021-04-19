@@ -2,7 +2,7 @@
 <Entitati>
     <tema ID="1">
         <Descriere>desc</Descriere>
-        <Deadline>2</Deadline>
-        <Startline>1</Startline>
+        <Deadline>10</Deadline>
+        <Startline>6</Startline>
     </tema>
 </Entitati>
